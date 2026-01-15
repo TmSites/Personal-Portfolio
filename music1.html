@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Box</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3b3b98);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .music-card {
+      background: #ffffff22;
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px;
+      width: 320px;
+      box-shadow: 0 8px 20px #0005;
+      text-align: center;
+      border: 1px solid #ffffff33;
+    }
+
+    .disc-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .disc {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #444 30%, #111 70%);
+      border: 6px solid #222;
+    }
+
+    .title {
+      margin: 10px 0 20px;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .play-btn {
+      padding: 8px 20px;
+      background: #fff;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
+    .volume-slider {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="music-card">
+    <div class="disc-container">
+      <div class="disc"></div>
+    </div>
+    <h2 class="title">Relaxing Melody</h2>
+    <input type="range" class="progress-bar" />
+    <div class="controls">
+      <button class="play-btn">Play</button>
+      <input type="range" class="volume-slider" min="0" max="1" step="0.01" />
+    </div>
+  </div>
+</body>
+</html>

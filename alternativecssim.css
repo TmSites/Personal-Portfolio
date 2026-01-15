@@ -1,0 +1,79 @@
+/* Reset default styles and set base font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background setup (optional image) */
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(leaf.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style for all links */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main navbar container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Enough height to fit all text */
+    padding: 0 15%; /* Left and right spacing */
+    background: #04560d; /* Dark green background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 100;
+    overflow: hidden; /* Prevent text from overflowing */
+}
+
+/* Container for animated text */
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Static text "Hi there, I'm" */
+.hit {
+    font-size: 30px; /* Set to requested size */
+    color: #edeade;
+    margin-right: 10px;
+}
+.animation-group span:nth-child(1) {
+    background-color: #4cc950; /* Red */
+    font-size: 35px;
+}
+
+.menu {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 100px; /* aralik vermek icin*/
+}
+
+.menu li a{
+    color: white;
+    font-size: 25px;
+    padding: 8px 12px;
+    transition: .3s;
+}
+
+.menu li a:hover{
+    background: #4cc950;
+    border-radius: 5px;
+}

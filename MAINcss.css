@@ -1,0 +1,107 @@
+/* Reset default styles and set base font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background setup (optional image) */
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(leaf.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style for all links */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main navbar container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Enough height to fit all text */
+    padding: 0 15%; /* Left and right spacing */
+    background: #04560d; /* Dark green background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 100;
+    overflow: hidden; /* Prevent text from overflowing */
+}
+
+/* Container for animated text */
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Static text "Hi there, I'm" */
+.hit {
+    font-size: 30px; /* Set to requested size */
+    color: #edeade;
+    margin-right: 10px;
+}
+
+/* Wrapper for animated text lines */
+.animations {
+    height: 2.5rem; /* Visible height */
+    overflow: hidden;
+    font-size: 30px; /* Match with hit text */
+    line-height: 2.5rem;
+}
+
+/* Animated block with all 3 lines stacked */
+.animations .animation-group {
+    animation: text-animation 6s infinite; /* Faster animation */
+}
+
+/* Style for each animated text line */
+.animation-group span {
+    display: block; /* Stack vertically */
+    height: 2.5rem;
+    padding: 0 0.75rem;
+    margin-bottom: 0; /* No spacing needed here */
+    color: white;
+}
+
+/* Different colors for each line */
+.animation-group span:nth-child(1) {
+    background-color: #457b9d; /* Red */
+}
+.animation-group span:nth-child(2) {
+    background-color: #4cc950; /* Blue */
+}
+.animation-group span:nth-child(3) {
+    background-color: #d1a432; /* Yellow */
+}
+
+/* Keyframes for vertical slide animation */
+@keyframes text-animation {
+    0%, 10% {
+        transform: translateY(0); /* Show first line */
+    }
+    25%, 35% {
+        transform: translateY(-2.5rem); /* Show second line */
+    }
+    50%, 60% {
+        transform: translateY(-5rem); /* Show third line */
+    }
+    75%, 85% {
+        transform: translateY(-2.5rem); /* Back to second */
+    }
+    95%, 100% {
+        transform: translateY(0); /* Back to first */
+    }
+}
+
+
+
+
