@@ -46,11 +46,15 @@ nav{
 }
 
 .logo{
+    box-shadow: var(--card-shadow);
+    border-radius: 50%;
+}
+.logo a{
+    color: var(--secondary-color);
+    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-color);
 }
-
 nav ul{
     list-style: none;
     display: flex;

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(e){
-            if (this.cash != ""){
+            if (this.hash != ""){
                 e.preventDefault();
                 const hash = this.hash;
 
