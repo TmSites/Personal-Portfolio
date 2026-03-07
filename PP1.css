@@ -1,11 +1,17 @@
 :root { 
-    --primary-color: #72b204;
-    --secondary-color: #7CFF4F; 
-    --background-color: #000000;
-    --text-color: #0A0A0A; 
-    --light-color: #c3f5c3; 
-    --card-shadow: #0F0F0F;
-    --buton-color: #61FF87; }
+    --primary-color: #A855F7;      
+    --secondary-color: #FF3CAC;    
+
+    --background-color: #0F0F13;
+
+    --text-color: #E8E8F0;
+
+    --light-color: #1A1A22;
+
+    --card-shadow: 0 0 20px rgba(168,85,247,0.4);
+
+    --buton-color: #A855F7;
+}
 
 *{
     margin: 0;
@@ -88,7 +94,7 @@ h2{
 }
 
 .btn:hover{
-    background-color: rgb(1, 172, 1);
+    background-color: var(--buton-color);
     transform: translateY(-2px);
 }
 
