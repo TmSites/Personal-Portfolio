@@ -232,8 +232,6 @@ footer{
     font-size: 0.9rem;
 }
 
-/*Media queries for responsiveness*/
-
 @media(max-width:768px){
     .hero{
         flex-direction: column;
@@ -241,7 +239,7 @@ footer{
     }
 
     .hero-image{
-        order: -1; /*move image above content on small screens*/
+        order: -1; 
     }
 
     nav{
