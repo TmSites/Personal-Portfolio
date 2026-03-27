@@ -1,70 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bagul Kakamyradova</title>
-        <link rel="stylesheet" href="PP1.css">
+        <title>TmSites</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit="cover">
+        <link rel="stylesheet" href="tmsites.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
+        <button class="toggle-menu" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <header>
-            <nav>
-                <div class="logo">TmSites</div>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <nav id="sidebar">
+                <div class="sidebar-top">
+                    <div class="head">TmSites</div>
+                    <ul>
+                       <li><a href="#about">TmSites barada</a></li>
+                       <li><a href="#terms">Terminler</a></li>
+                       <li><a href="#contact">Habarlaşmak</a></li>
+                       <li><a href="javascript:void(0)" id="loginBtn" class="girish">Giriş</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-settings">
+                    <hr>
+                    <p class="setTitle">Sazlamalar</p>
+
+                    <div class="setting-row">
+                
+                        <select id="langSelect">
+                            <option value="" selected disabled>&#128069;Dil saylan</option>
+                            <option value="tm">Türkmençe</option>
+                            <option value="en">English</option>
+                        </select>
+                        <select id="fontSize">
+                            <option value="" selected disabled>&#128207; Yazgy olcegi</option>
+                            <option value="16px">Kiçi</option>
+                            <option value="18px">Orta</option>
+                            <option value="22px">Uly</option>
+                        </select>
+                    </div>
+                </div>
             </nav>
         </header>
+        <div class="overlay" id="overlay"></div>
         <main>
             <section id="about" class="hero">
                 <div class="hero-content">
-                    <h1>Hi, I'm Bagul Kakamyradova</h1>
-                    <p class="subtitle">Computer Science student 
-                        at <a href="https://www.upb.ro">UNSTPB</a></p>
-                    <a href="#contactLink" class="btn">Get In Touch</a>
+                    <h1>Salam, hoş geldiňiz:)</h1>
+                    <p class="subtitle">TmSites - web programmirleme we
+                         kompýuter injenerçiligi ugrundan terminleri/täzelikleri öwrenmek üçin
+                         döredilen. 
+                         <br>Başga-da <a class="persport" href="https://tmsites.github.io/Personal-Portfolio/"><i>şahsy web sahypamy</i></a> we
+                         habarlaşmak üçin maglumatlary tapyp bilersiňiz. 
+                    </p>  
                 </div>
                 <div class="hero-image">
-                    <img src="fotom.png" alt="logo-image">
+                    <img src="tmlogo.jpg" alt="logo-image">
                 </div>
             </section>
-            <section id="skills" class="skills">
-                <h2>Skills</h2>
-                <div>
-                    <div class="skill-card">HTML5</div>
-                    <div class="skill-card">CSS3</div>
-                    <div class="skill-card">JavaScript (ES6+)</div>
-                    <div class="skill-card">React</div>
-                    <div class="skill-card">Git & GitHub</div>
-                </div>
-            </section>
-            <section id="projects" class="projects">
-                <h2>Projects</h2>
-                <div class="project-card">
-                    <h3>Project name</h3>
-                    <p>write here description..</p>
-                    <a href="#" target="_blank">View Project</a> | <a href="#">GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project name2</h3>
-                    <p>write here description</p>
-                    <a href="a">View projects</a> | <a href="#">GitHub</a>
-                </div>
+
+            <section id="terms" class="termin">
+                <h2>Terminler</h2>
+                <div class="categories">
+                    <a href="http://127.0.0.1:5500/categories/web/web.html" class="category">Web Programmirleme</a>
+                    <a href="tools.html" class="category">Software & Hardware gurallary</a>
+                    <a href="ce.html" class="category">Kompýuter injenerçiligi</a>
+                    <a href="linux.html" class="category">Linux</a>
+                    <a href="cyber.html" class="category">Kiberhowpsuzlyk</a>
+                    <a href="dsa.html" class="category">Maglumat gurluşlary we algoritmler</a>
             </section>
             <section id="contact" class="contact">
-                <h2>Contact me</h2>
-                <p>I'm currently looking for new opportunities. Feel free to reach out!</p>
-                <form id="contactForm">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Write your message, please..."></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+                <h2>Habarlaşmak</h2>
+                <p>Soragyňyz/maslahatyňyz/TmSites üçin teklibiňiz bolsa, 
+                    habarlaşyp bilersiňiz!
+                </p>
+                <ul>
+                    <li>
+                        <a href="mailto:turkmensites@gmail.com">
+                        <i class="fa-solid fa-envelope"></i> Gmail
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/tm.sites/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                    </li>
+
+                     <li>
+                        <a href="https://www.linkedin.com/in/bagul-kakamyradova-aa2538343" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                </ul>
             </section>
         </main>
-        <script src="PP1.js"></script>
+        <footer><p>&copy; TmSites. Sizin üçin!</p></footer>
+        <script src="tmsites.js"></script>
     </body>
-    <footer>
-            <p>&copy; Made with LOVE. All rights reserved</p>
-    </footer>
 </html>
