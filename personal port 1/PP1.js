@@ -13,18 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     });
-    const contactForm = document.getElementById('contactForm');
-    const formMessage = document.getElementById('formMessage');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        formMessage.style.display = 'block';
-        formMessage.textContent = 'Thank you for your message! I will get back soon';
-        formMessage.style.color = 'green';
-        contactForm.reset();
-        setTimeout(() => {
-            formMessage.style.display = 'none';
-            }, 5000);
-        });
+    
 
     const header = document.querySelector('header');
 
